@@ -245,6 +245,32 @@ document.getElementById("btn").addEventListener("click", function() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Example</title>
+</head>
+<body>
+
+    <button id="myButton">Click Me</button>
+    
+    <script>
+        // Selecting the button element
+        const button = document.getElementById("myButton");
+
+        // Adding a click event listener
+        button.addEventListener("click", function() {
+            alert("Button was clicked!");
+        });
+    </script>
+    
+</body>
+</html>
+```
+`Example:`
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation Example</title>
     <style>
         #box {
