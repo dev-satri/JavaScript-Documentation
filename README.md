@@ -194,6 +194,33 @@ document.getElementById("btn").addEventListener("click", function() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>March Intake</title>
+</head>
+<body>
+
+    <p id="person">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ducimus quis aliquid. Illo libero error at eum rerum iure quisquam!</p>
+
+    <p class="person2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aspernatur.</p>
+
+<button onclick="displayData()">Tap Me</button>
+    
+</body>
+
+<script>
+   function displayData(){
+    document.getElementsByClassName("person2")[0].innerText="Hello";
+    document.getElementById("person").innerText="This is updated text";
+    }
+</script>
+</html>
+```
+`Example:`
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation Example</title>
     <style>
         #box {
