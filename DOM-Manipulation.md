@@ -126,10 +126,4 @@ Mastering DOM manipulation is essential for creating dynamic and interactive web
 
 
 
-```
-```
-
-
-
-
 
