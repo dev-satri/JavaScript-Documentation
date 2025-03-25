@@ -58,6 +58,29 @@ document.getElementById("themeButton").addEventListener("click", function() {
 </body>
 </html>
 ```
+`Example 3: Live Character Count`
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Count</title>
+</head>
+<body>
+
+<h2>Live Character Count</h2>
+<textarea id="textInput"></textarea>
+<p>Characters: <span id="charCount">0</span></p>
+<script>
+document.getElementById("textInput").addEventListener("input", function() {
+    document.getElementById("charCount").textContent = this.value.length;
+});
+</script>
+    
+</body>
+</html>
+```
 
 ## Selecting Elements
 To manipulate the DOM, you must first select the elements you want to modify. JavaScript provides several methods for this purpose:
