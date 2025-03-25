@@ -171,7 +171,9 @@ async function fetchData() {
 }
 fetchData();
 ```
-# JavaScript DOM Manipulation
+### [:fast_forward: Next: JavaScript DOM Manipulation](https://github.com/dev-satri/JavaScript-Documentation/blob/main/DOM-Manipulation.md)
+
+## JavaScript DOM Manipulation
 - Selecting Elements:
 ```
 let element = document.getElementById("myId");
@@ -312,4 +314,3 @@ document.getElementById("btn").addEventListener("click", function() {
 </body>
 </html>
 ```
-
