@@ -90,12 +90,12 @@ To manipulate the DOM, you must first select the elements you want to modify. Ja
 const element = document.getElementById("myId");
 ```
 
-### 2. Using getElementsByClassName()
+### 2. Using `getElementsByClassName()`
 ```
 const elements = document.getElementsByClassName("myClass");
 ```
 
-### 3. Using getElementsByTagName()
+### 3. Using `getElementsByTagName()`
 ```
 const elements = document.getElementsByTagName("div");
 ```
