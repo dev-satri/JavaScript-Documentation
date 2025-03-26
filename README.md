@@ -10,7 +10,7 @@ JavaScript (JS) is a high-level, interpreted programming language primarily used
 `Node.js for Backend`: JavaScript can also be used on the server side with Node.js.<br>
 
 # JavaScript Basics
-1. Variables and Data Types
+## Variables and Data Types
 - Declaring Variables:
 ```
 var name = "John"; // Function-scoped
@@ -29,7 +29,7 @@ let user = { name: "John", age: 30 }; // Object
 let arr = [1, 2, 3, 4]; // Array
 ```
 
-2. Operators
+## Operators
 - Arithmetic Operators:
 ```
 let a = 10;
@@ -56,7 +56,7 @@ console.log(true || false); // true (OR)
 console.log(!true); // false (NOT)
 ```
 
-3. Control Flow
+## Control Flow
 - Conditional Statements:
 ```
 let age = 20;
@@ -93,6 +93,86 @@ while (j < 5) {
     console.log(j);
     j++;
 }
+```
+# Type Conversion
+## Implicit Type Conversion (Type Coercion)
+
+### Number to String
+```
+console.log(5 + "5");  // "55" (Number converted to String)
+console.log(true + " is a boolean"); // "true is a boolean"
+```
+### String to Number
+```
+console.log("5" - 2);  // 3 (String converted to Number)
+console.log("10" * "2"); // 20 (Both strings converted to numbers)
+console.log("10" / "2"); // 5
+console.log("5" - "hello"); // NaN (Not a Number)
+```
+### Boolean to Number
+```
+console.log(true + 2);  // 3 (true = 1, false = 0)
+console.log(false + 10); // 10
+```
+### Null and Undefined
+```
+console.log(null + 5);  // 5 (null is treated as 0)
+console.log(undefined + 10); // NaN (undefined leads to NaN)
+```
+## Explicit Type Conversion (Type Casting)
+You can manually convert types using JavaScript's built-in functions.
+### Convert to Number
+Use `Number()`, `parseInt()`, `parseFloat()`
+```
+console.log(Number("42"));  // 42
+console.log(Number("42.5"));  // 42.5
+console.log(Number("42px"));  // NaN
+console.log(parseInt("42px"));  // 42
+console.log(parseFloat("42.5px"));  // 42.5
+console.log(Number(true));  // 1
+console.log(Number(false)); // 0
+```
+### Convert to String
+Use `String()` or `.toString()`
+```
+console.log(String(123));  // "123"
+console.log((123).toString());  // "123"
+console.log(String(true));  // "true"
+```
+### Convert to Boolean
+Use `Boolean()`
+```
+console.log(Boolean(0));  // false
+console.log(Boolean(1));  // true
+console.log(Boolean("")); // false (empty string is false)
+console.log(Boolean("Hello")); // true (non-empty string is true)
+console.log(Boolean(null)); // false
+console.log(Boolean(undefined)); // false
+console.log(Boolean(NaN)); // false
+console.log(Boolean([])); // true (empty array is true)
+console.log(Boolean({})); // true (empty object is true)
+```
+## Special Cases
+```
+console.log(Number(null));  // 0
+console.log(Number(undefined)); // NaN
+console.log(5 + true);  // 6 (true is 1)
+console.log(5 + false); // 5 (false is 0)
+console.log("5" + null); // "5null" (null is converted to string)
+console.log("5" - null); // 5 (null is converted to 0)
+console.log("5" - undefined); // NaN (undefined leads to NaN)
+```
+## Checking Types
+Use `typeof` to check data types.
+```
+console.log(typeof "Hello"); // "string"
+console.log(typeof 42); // "number"
+console.log(typeof true); // "boolean"
+console.log(typeof []); // "object"
+console.log(typeof {}); // "object"
+console.log(typeof null); // "object" (special case)
+console.log(typeof undefined); // "undefined"
+console.log(typeof NaN); // "number"
 ```
 
 # Functions in JavaScript
