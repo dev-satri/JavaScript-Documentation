@@ -5,7 +5,7 @@ The Document Object Model (DOM) is a programming interface for web documents. It
 
 ## Examples
 `Example 1: Simple TODO List`
-```js
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +33,7 @@ The Document Object Model (DOM) is a programming interface for web documents. It
 </html>
 ```
 `Example 2: Light/ Dark Mode`
-```js
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +59,7 @@ document.getElementById("themeButton").addEventListener("click", function() {
 </html>
 ```
 `Example 3: Live Character Count`
-```js
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
